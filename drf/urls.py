@@ -2,11 +2,11 @@ from django.conf.urls import url
 from django.urls import include
 from rest_framework.routers import DefaultRouter
 
-from .views import TransferViewSet
+from .views import Cashbox
 
 
 router = DefaultRouter()
-router.register(r'transfer', TransferViewSet, basename='auth')
+router.register(r'transfer', Cashbox, basename='auth')
 
 
 urlpatterns = [
